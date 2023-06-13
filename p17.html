@@ -63,7 +63,66 @@
 
     section.dos span.quoted:before{
         content: '""';
+        font-size: 2em;
+        color: #999;
+        margin: 0 6px 0 0;
     }
+
+    section.dos span.quoted:after{
+        content: '""';
+        font-size: 2em;
+        color: #999;
+        margin: 0 0 0 4px;
+    }
+
+    /*apartdo3*/
+    section.tres a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    section.tres a:after{
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(https://bit.ly/2KLhcav) no-repeat top left;
+        background-size: cover;
+    }
+
+    /*apatdo4*/
+    section.cuatro p {
+        display: inline-block;
+        margin: 2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: 1px solid black;
+        padding: .5em;
+        cursor: crosshair;
+        position: relative;
+    }
+
+    section.cuatro p.cuatroA:before{
+        content: "";
+        height: 5px;
+        width: 100%;
+        background-color: #444;
+
+        position: absolute;
+        top:0;
+        left: 0;
+
+        transform: scaleX(0.5);
+        transform-origin: left;
+        transition: transform ease-in-out 500ms;
+    }
+
+    section.cuatro p.cuatroA:hover:before{
+        transform: scaleX(1);
+    }
+
+
 
 
 
@@ -100,10 +159,10 @@
   
     <section class="cuatro">
         <h2>4 animaciones</h2>
-      <p class="tresA">Top Left-Right</p>
-      <p class="tresB">Down Right-Left</p>
-      <p class="tresC">Left Down-Up</p>
-      <p class="tresD">Right Up-Down</p>
+      <p class="CuatroA">Top Left-Right</p>
+      <p class="CuatroB">Down Right-Left</p>
+      <p class="CuatroC">Left Down-Up</p>
+      <p class="CuatroD">Right Up-Down</p>
     </section>
   
   
